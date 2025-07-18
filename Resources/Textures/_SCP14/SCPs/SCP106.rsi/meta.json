@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprite made by Ribo, Idea made by Dr Gears from the SCP Wiki Source: https://scpwiki.com/scp-106",
+  "states": [
+    {
+      "name": "106Alive",
+      "directions": 4
+    }
+  ]
+}
