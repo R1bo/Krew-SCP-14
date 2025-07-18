@@ -12,6 +12,7 @@
       traits:
         - Foreigner
         - ForeignerLight
+        - Muted
     - !type:CharacterEmployerRequirement
       inverted: true
       employers:
@@ -22,7 +23,7 @@
   requireAdminNotify: true
   joinNotifyCrew: true
   supervisors: job-supervisors-centcom
-  canBeAntag: true
+  canBeAntag: false
   access:
   - CentralCommand
   - Brig
@@ -61,7 +62,7 @@
 
 - type: startingGear
   id: NanotrasenRepresentativePlasmamanGear
-  parent: BasePlasmamanGear
+  parent: BasePlasmamanMaskGear
   equipment:
     jumpsuit: ClothingUniformEnvirosuitNanotrasenRepresentative
     head: ClothingHeadEnvirohelmNanotrasenRepresentative

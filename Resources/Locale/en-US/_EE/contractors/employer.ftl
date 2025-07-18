@@ -24,9 +24,9 @@ employer_name_zenghupharmaceuticals = Zeng-Hu Pharmaceuticals
 employer_name_zenghupharmaceuticals_command = Zeng-Hu Pharmaceuticals Command
 employer_description_zenghupharmaceuticals = The leading name in biotechnology, cybernetics, and pharmaceuticals. Their cutting-edge medical treatments and cybernetic implants have saved countless lives, but their ethics are often called into question—especially by those who can't afford their exorbitant prices.
 
-employer_name_cybersun = Cybersun
-employer_name_cybersun_command = Cybersun Command
-employer_description_cybersun = The public face of the Solarian military-industrial complex and one of the most influential defence contractors in known space. From cutting-edge weapons to next-generation warships, Cybersun supplies the Alliance with the tools of war, securing its dominance in the stars. To Solarians, they are patriots and protectors—outsiders, however, may see something far more sinister.
+employer_name_zavodskoiinterstellar = Zavodskoi Interstellar
+employer_name_zavodskoiinterstellar_command = Zavodskoi Interstellar Command
+employer_description_zavodskoiinterstellar = Zavodskoi Interstellar, formerly Necropolis Industries, is a weapons and aerospace manufacturing and development conglomerate. Zavodskoi distributes everything from light to heavy arms, space vessel weapons, ship-building, aircraft, ground vehicles, combat spacesuits, and military software. They also produce the Z.I. line of positronics, used for private security and military contracting.
 
 employer_name_interdyne = Interdyne
 employer_name_interdyne_command = Interdyne Command
@@ -42,4 +42,8 @@ employer_description_orionexpress = Orion Express is a manufactured megacorporat
 
 employer_name_pmcg = PMCG
 employer_name_pmcg_command = PMCG Command
-employer_description_pmcg = A coalition of security contractors in service of the Stellar Corporate Conglomerate, the Private Military Contracting Group is one of the elements born from the necessity of protecting an ever-growing corporate empire. Gathering mercenaries from all across the galaxy, the Private Military Contracting Group deploys a diverse force to anywhere they are needed.
+employer_description_pmcg = A coalition of security contractors, the Private Military Contracting Group is one of the elements born from the necessity of protecting an ever-growing corporate empire. Gathering mercenaries from all across the galaxy, the Private Military Contracting Group deploys a diverse force to anywhere they are needed.
+
+employer_name_eastorioncompany = East-Orion Company
+employer_name_eastorioncompany_command = East-Orion Company Command
+employer_description_eastorioncompany = A Nederlandic initiative to exploit an untapped market in 2157, the United East-Orion Company was an old idea made new. Rooted in tradition that went back centuries, two large agricultural corporations — the New-Nederic agricultural machinery manufacturer and the Farmer's Civil Union — came together under one banner to offer planet-honed skillsets to a growing number of corporate space stations.
