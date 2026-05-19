@@ -1,5 +1,5 @@
 - type: listing
-  id: Mouse Operative Reinforcement
+  id: MouseOperativeReinforcement
   name: uplink-reinforcement-radio-nukie-mouse-name
   description: uplink-reinforcement-radio-nukie-mouse-desc
   productEntity: ReinforcementRadioSyndicateNukieMouse
@@ -26,16 +26,6 @@
     blacklist:
       components:
       - SurplusBundle
-
-- type: listing
-  id: UplinkDoorjack
-  name: uplink-doorjack-name
-  description: uplink-doorjack-desc
-  productEntity: Doorjack
-  cost:
-    Telecrystal: 30
-  categories:
-  - UplinkDisruption
 
 - type: listing
   id: BaseBallBatHomeRun

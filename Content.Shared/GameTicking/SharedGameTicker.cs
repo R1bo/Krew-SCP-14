@@ -7,6 +7,7 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Markdown.Mapping;
 using Robust.Shared.Serialization.Markdown.Value;
 using Robust.Shared.Timing;
+using Robust.Shared.Audio;
 
 namespace Content.Shared.GameTicking
 {
@@ -42,8 +43,12 @@ namespace Content.Shared.GameTicking
 
         private void OnRecordingStart(MappingDataNode metadata, List<object> events)
         {
-            metadata["roundId"] = new ValueDataNode(RoundId.ToString());
+            if (RoundId != 0)
+            {
+                metadata["roundId"] = new ValueDataNode(RoundId.ToString());
+            }
         }
+
         public TimeSpan RoundDuration()
         {
             return _gameTiming.CurTime.Subtract(RoundStartTimeSpan);
@@ -86,16 +91,18 @@ namespace Content.Shared.GameTicking
     {
         public bool IsRoundStarted { get; }
         public LobbyBackgroundPrototype? LobbyBackground { get; }
+        public string? LobbySplashText { get; }
         public bool YouAreReady { get; }
         // UTC.
         public TimeSpan StartTime { get; }
         public TimeSpan RoundStartTimeSpan { get; }
         public bool Paused { get; }
 
-        public TickerLobbyStatusEvent(bool isRoundStarted, LobbyBackgroundPrototype? lobbyBackground, bool youAreReady, TimeSpan startTime, TimeSpan preloadTime, TimeSpan roundStartTimeSpan, bool paused)
+        public TickerLobbyStatusEvent(bool isRoundStarted, LobbyBackgroundPrototype? lobbyBackground, string? lobbySplashText, bool youAreReady, TimeSpan startTime, TimeSpan preloadTime, TimeSpan roundStartTimeSpan, bool paused)
         {
             IsRoundStarted = isRoundStarted;
             LobbyBackground = lobbyBackground;
+            LobbySplashText = lobbySplashText;
             YouAreReady = youAreReady;
             StartTime = startTime;
             RoundStartTimeSpan = roundStartTimeSpan;
@@ -192,7 +199,7 @@ namespace Content.Shared.GameTicking
         /// <summary>
         /// Sound gets networked due to how entity lifecycle works between client / server and to avoid clipping.
         /// </summary>
-        public string? RestartSound;
+        public ResolvedSoundSpecifier? RestartSound;
 
         public RoundEndMessageEvent(
             string gamemodeTitle,
@@ -201,7 +208,7 @@ namespace Content.Shared.GameTicking
             int roundId,
             int playerCount,
             RoundEndPlayerInfo[] allPlayersEndInfo,
-            string? restartSound)
+            ResolvedSoundSpecifier? restartSound)
         {
             GamemodeTitle = gamemodeTitle;
             RoundEndText = roundEndText;
